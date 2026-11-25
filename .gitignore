@@ -1,0 +1,19 @@
+# Dependencies
+Backend/node_modules/
+frontend/node_modules/
+
+# Environment variables and secrets
+Backend/.env
+Backend/.env.*
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Build files
+frontend/dist/
+
+# Local uploads
+Backend/statics/uploads/
+
+# Windows system files
+**/desktop.ini
