@@ -1,7 +1,7 @@
 //copy paste the imports from noteRoute
 
 const NoteModel = require("../models/NotesModel")
-const UserModel = require("../models/UserModel")
+const UserModel = require("../models/Usermodel")
 const {validationResult}=require("express-validator")
 
 
