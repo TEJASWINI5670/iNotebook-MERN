@@ -1,6 +1,6 @@
 
 const {validationResult}=require("express-validator")
-const UserModel = require("../models/UserModel");
+const UserModel = require("../models/Usermodel");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const sendOTP = require("../services/generateOTOforLogin");
