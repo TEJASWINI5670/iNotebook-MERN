@@ -7,7 +7,7 @@ const cors=require("cors")//9
 const userRouter=require("./routes/userRoute")//11
 const notesRouter=require("./routes/noteRoute")//13
 const app=express()//4
-const blogRouter=require("./routes/BlogRoute")//15
+// const blogRouter=require("./routes/BlogRoute")//15
 // const fileUploadRouter=require("./routes/fileRoute")
 
 
@@ -18,7 +18,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://i-notebook-mern-three.vercel.app"
+    "https://i-notebook-mern-three.vercel.app",
+    "https://i-notebook-mern-pjmmx9q02-i-notebook.vercel.app"
   ]
 }));
 // app.use('/assets/data', express.static('statics'));  //8---> //add the url in the browser //In Express.js, serving static files like images, CSS, and JavaScript used to require custom routes. With the express.static() function, you can serve static content directly from a folder, making it easier and faster
