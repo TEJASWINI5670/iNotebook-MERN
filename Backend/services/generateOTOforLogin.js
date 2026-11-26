@@ -3,10 +3,9 @@ const transporter=require("../services/nodemailer")
 
 
 
-function generateOTP() {//1
-    return Math.floor(100000 + crypto.randomInt() * 900000);
+function generateOTP() {
+    return Math.floor(100000 + Math.random() * 900000);
 }
-
 
 const sendOTP=async(email)=>{
         if (!email || typeof email !== "string") {
