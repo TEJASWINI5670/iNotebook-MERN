@@ -6,8 +6,9 @@ import "./Home.css";
 import { toast,Toaster } from "react-hot-toast";
 
 
-const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8400";
+const API_URL = (
+    import.meta.env.VITE_API_URL || "http://localhost:8400"
+).replace(/\/api\/user\/?$/, "");
 
 const Home = () => {
   const navigate = useNavigate();
